@@ -1,0 +1,53 @@
+﻿<Window x:Class="Animation2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Animation2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="330" Width="310">
+    <Window.Resources>
+        <PathGeometry x:Key="path">
+            <PathFigure StartPoint="140,200" IsClosed="True">
+                <ArcSegment Size="100,100" Point="250,149" IsLargeArc="True" SweepDirection="Clockwise"/>
+            </PathFigure>
+        </PathGeometry>
+    </Window.Resources>
+    <Canvas>
+        <Ellipse HorizontalAlignment="Left" 
+                 Height="20" 
+                 Margin="0" 
+                 Stroke="Black" 
+                 VerticalAlignment="Top" 
+                 Width="20" Canvas.Left="140" Canvas.Top="25" 
+                 RenderTransformOrigin="0.5,0.487">
+            <Ellipse.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="0.017"/>
+                    <GradientStop Color="#FFCD4343" Offset="1"/>
+                    <GradientStop Color="Black" Offset="0.003"/>
+                    <GradientStop Color="#FFA9A2A1" Offset="0.488"/>
+                    <GradientStop Color="#FF2BA076" Offset="0.663"/>
+                    <GradientStop Color="#FF297334" Offset="0.915"/>
+                </RadialGradientBrush>
+            </Ellipse.Fill>
+            <Ellipse.Triggers>
+                <EventTrigger RoutedEvent="Window.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimationUsingPath
+                                Storyboard.TargetProperty="(Canvas.Top)"
+                                Duration="0:0:3"
+                                RepeatBehavior="Forever"
+                                PathGeometry="{StaticResource path}"
+                                Source="Y"
+                                AccelerationRatio="0.8"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+
+                </EventTrigger>
+            </Ellipse.Triggers>
+        </Ellipse>
+
+    </Canvas>
+</Window>

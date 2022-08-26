@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation", "Animation\Animation.csproj", "{A43D9E3C-30D8-42E5-8F4A-0E93A1CEA6A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animation2", "Animation2\Animation2.csproj", "{9B550F26-8777-482F-8ED9-DBCC5544BDF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A43D9E3C-30D8-42E5-8F4A-0E93A1CEA6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43D9E3C-30D8-42E5-8F4A-0E93A1CEA6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43D9E3C-30D8-42E5-8F4A-0E93A1CEA6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43D9E3C-30D8-42E5-8F4A-0E93A1CEA6A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B550F26-8777-482F-8ED9-DBCC5544BDF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B550F26-8777-482F-8ED9-DBCC5544BDF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B550F26-8777-482F-8ED9-DBCC5544BDF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B550F26-8777-482F-8ED9-DBCC5544BDF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AD45E06-0AC3-4C05-AC37-A0C61DB31E89}
+	EndGlobalSection
+EndGlobal
